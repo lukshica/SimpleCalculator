@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CalculatorApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    
+     <string name="plus">+</string>
+     <string name="minus">-</string>
+     <string name="multiplication">*</string>
+     <string name="division">/</string>
+     <string name="Output">Output</string>
+     <string name="Input1">Input1</string>
+     <string name="Input2">Input2</string>
+</resources>

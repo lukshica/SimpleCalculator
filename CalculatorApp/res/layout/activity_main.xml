@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+     
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="78dp"
+        android:text="@string/Input2"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:text="@string/Input1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/EditTextInput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+    </EditText>
+
+     <EditText
+        android:id="@+id/EditTextInput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextInput2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+     
+    <Button
+        android:id="@+id/ButtonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ButtonPlus"
+        android:layout_alignBottom="@+id/ButtonPlus"
+        android:layout_toRightOf="@+id/ButtonPlus"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/ButtonMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ButtonMinus"
+        android:layout_alignBottom="@+id/ButtonMinus"
+        android:layout_toRightOf="@+id/ButtonMinus"
+        android:text="@string/multiplication" />
+
+    <Button
+        android:id="@+id/ButtonDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ButtonMulti"
+        android:layout_alignBottom="@+id/ButtonMulti"
+        android:layout_toRightOf="@+id/ButtonMulti"
+        android:text="@string/division" />
+
+    
+    <Button
+        android:id="@+id/ButtonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:text="@string/plus" />
+
+    <TextView
+        android:id="@+id/OutputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ButtonMinus"
+        android:layout_marginTop="85dp"
+        android:layout_toLeftOf="@+id/ButtonMulti"
+        android:text="@string/Output" />
+
+    <EditText
+        android:id="@+id/editTextOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextInput1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+    </EditText>
+
+</RelativeLayout>
